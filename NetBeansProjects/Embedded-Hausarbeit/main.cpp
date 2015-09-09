@@ -30,6 +30,7 @@ using namespace std;
  * werden die aktuellen Werte auf dem Max7219 Display ausgegeben.
  */
 int main(int argc, char** argv) {
+    printf("Git Test");
     float luftfeuchtigkeit,lufttemperatur, wassertemperatur;
     lufttemperatur = 1.0;
     luftfeuchtigkeit = 1.0;
