@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Ausgabe.h</itemPath>
+      <itemPath>DS18B20.h</itemPath>
+      <itemPath>HC_SR501.h</itemPath>
+      <itemPath>Relais.h</itemPath>
+      <itemPath>dht22.h</itemPath>
+      <itemPath>gpioWork.h</itemPath>
+      <itemPath>max7219led.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Ausgabe.cpp</itemPath>
+      <itemPath>DS18B20.cpp</itemPath>
+      <itemPath>HC_SR501.cpp</itemPath>
+      <itemPath>Relais.cpp</itemPath>
+      <itemPath>dht22.cpp</itemPath>
+      <itemPath>gpioWork.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>max7219led.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="Ausgabe.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Ausgabe.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DS18B20.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DS18B20.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="HC_SR501.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="HC_SR501.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Relais.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Relais.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dht22.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dht22.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="gpioWork.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="gpioWork.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="max7219led.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="max7219led.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Ausgabe.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Ausgabe.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DS18B20.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DS18B20.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="HC_SR501.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="HC_SR501.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Relais.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Relais.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dht22.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="dht22.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="gpioWork.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="gpioWork.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="max7219led.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="max7219led.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
