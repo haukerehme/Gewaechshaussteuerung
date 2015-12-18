@@ -19,7 +19,6 @@
 #include "DS18B20.h"
 #include "Relais.h"
 using namespace std;
-
 /*
  * Programmablauf:
  * Die Werte der verschiedenen Sensoren (Lufttemperatur, Wassertemperatur und 
@@ -44,23 +43,22 @@ int main(int argc, char** argv) {
     int altTime;
     bool offenesFenster = false;
     aus = new Ausgabe();
-        dht = new dht22();
-        ds = new DS18B20();
-    while(true){
-        
-        if(hc->readHCSR501() == 1){
-            printf("Bewegung");
-            while(true){
-                int i = dht->readDHT(17,&lufttemperatur,&luftfeuchtigkeit);
-                if(i == 0 ){
-                    break;
-                }
-                printf("DHT nächster Versuch");
+    dhtIndoor = new dht22();
+    dsOutdoor15m = new DS18B20("/sys/bus/w1/devices/28-0000061571d2/w1_slave");
+    while(true){     
+        while(true){
+            int i = dht->readDHT(17,&lufttemperatur,&luftfeuchtigkeit);
+            if(i == 0 ){
+                break;
             }
-            wassertemperatur = ds->getTemp();
-            cout << "Temp: " << lufttemperatur << endl;
-            aus->ausgabeText(lufttemperatur,luftfeuchtigkeit,wassertemperatur);         
+            printf("DHT nächster Versuch");
         }
+        
+        wassertemperatur = ds->getTemp();
+        cout << "Temp: " << lufttemperatur << endl;
+        aus->ausgabeText(lufttemperatur,luftfeuchtigkeit,wassertemperatur);         
+    }
+    
         sek = time(NULL);
         ts = localtime(&sek);
         
